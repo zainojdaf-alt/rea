@@ -1,0 +1,21 @@
+{
+	"schemaVersion": 1,
+	"id": "auction_sniper",
+	"version": "${version}",
+	"name": "Auction Sniper",
+	"description": "DonutSMP client-side auction sniper that finds exact items below a configured maximum price.",
+	"authors": ["Titanitus"],
+	"license": "MIT",
+	"icon": "assets/auction_sniper/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["com.auctionsniper.client.AuctionSniperClient"]
+	},
+	"mixins": ["auction_sniper.client.mixins.json"],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
